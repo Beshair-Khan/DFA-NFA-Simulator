@@ -41,25 +41,3 @@ class DFA:
         accepted=current_state in self.accept_states
         return step, accepted
     
-
-
-# Run Part
-states = {"q0", "q1"}
-alphabet = {"0", "1"}
-
-transitions = {
-    "q0": {"0": "q0", "1": "q1"},
-    "q1": {"0": "q0", "1": "q1"}
-}
-
-start_state = "q0"
-accept_states = {"q1"}
-
-dfa = DFA(states, alphabet, transitions, start_state, accept_states)
-
-steps, result = dfa.run("1011")
-
-print("Accepted:", result)
-
-for s in steps:
-    print(s)
