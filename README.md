@@ -1,5 +1,4 @@
 # DFA-NFA-Simulator
-# DFA / NFA Simulator
 
 An interactive web-based simulator for Deterministic Finite Automata (DFA) and Non-deterministic Finite Automata (NFA), built as a Theory of Automata course project.
 
